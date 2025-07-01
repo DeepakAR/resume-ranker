@@ -36,3 +36,19 @@ def extract_keywords_from_jd(jd_text,top_n=10):
         sorted_keywords=sorted(freq.items())
         key=lambda x:x[1],reverse=True
     return sorted_keywords[:top_n]
+
+jd_file="job_description.txt"
+try:
+    with open(jd_file,"r",encoding="utf-8") as f:
+        jd_text=f.read()
+except FileNotFoundError:
+    print("job description was not found")
+    jd_text=""
+jd_keywords=extract_keywords_from_jd(jd_text,top_n=10)
+print("top jd keywords ",jd_keywords)
+
+matched_keywords=[word for word,freq in jd_keywords 
+                if word in extracted_text.lower()]
+score=len(matched_keywords)/len(jd_keywords) *100
+print("matched keywords : ",matched_keywords)
+print("resume score : ",round(score,2),"% match with JD ")
