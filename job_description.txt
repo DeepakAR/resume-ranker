@@ -1,0 +1,13 @@
+We are seeking a Data Analyst with strong analytical skills to join our team. The ideal candidate should have experience in Python, SQL, and data visualization tools such as Tableau or Power BI.
+
+Responsibilities:
+- Analyze large datasets to derive actionable insights
+- Create dashboards and reports for business stakeholders
+- Work closely with cross-functional teams
+- Perform data cleaning and preprocessing
+
+Required Skills:
+- Proficiency in Python and SQL
+- Experience with data visualization tools (Tableau, Power BI)
+- Strong analytical and problem-solving skills
+- Knowledge of statistics and machine learning is a plus
